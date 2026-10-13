@@ -1,19 +1,19 @@
 # ⚖️ DocuAudit AI - منصة تدقيق المستندات بالذكاء الاصطناعي
 
-منصة هندسية متكاملة تعتمد على معمارية استرجاع البيانات المعزز (RAG) وقواعد البيانات المتجهية لاستخراج وتدقيق بنود العقود والمستندات بدقة وموثوقية عالية[span_2](start_span)[span_2](end_span).
+منصة متكاملة تعتمد على معمارية استرجاع البيانات المعزز (RAG) وقواعد البيانات المتجهية لاستخراج وتدقيق بنود العقود والمستندات بدقة وموثوقية عالية.
 
 ## 🚀 المميزات الأساسية
-- **فهرسة وتقطيع دلالي (Semantic Chunking):** قراءة ملفات الـ PDF وتقسيمها مع الحفاظ على السياق[span_3](start_span)[span_3](end_span)[span_4](start_span)[span_4](end_span).
-- **توثيق دقيق للأدلة:** استرجاع البنود مع ذكر رقم الصفحة الدقيق لمنع هلوسة الذكاء الاصطناعي[span_5](start_span)[span_5](end_span)[span_6](start_span)[span_6](end_span).
-- **تحليل وتقييم المخاطر:** تقييم تلقائي لحساسية البنود والشروط الجزائية[span_7](start_span)[span_7](end_span).
-- **عارض مستندات مدمج:** استعراض الوثيقة الأصلية جنباً إلى جنب مع لوحة التدقيق[span_8](start_span)[span_8](end_span).
+- **فهرسة وتقطيع دلالي (Semantic Chunking):** قراءة ملفات الـ PDF وتقسيمها مع الحفاظ على ترابط السياق.
+- **توثيق دقيق للأدلة:** استرجاع البنود مع ذكر رقم الصفحة الدقيق لمنع هلوسة الذكاء الاصطناعي.
+- **تحليل وتقييم المخاطر:** تقييم تلقائي لحساسية البنود وتحديد درجات الخطورة.
+- **عارض مستندات مدمج:** استعراض الوثيقة الأصلية جنباً إلى جنب مع لوحة التدقيق.
 
 ## 🛠️ البنية التقنية (Tech Stack)
-- **Backend:** FastAPI, Python, PyPDF[span_9](start_span)[span_9](end_span).
-- **Frontend:** Streamlit[span_10](start_span)[span_10](end_span).
-- **Architecture:** RAG (Retrieval-Augmented Generation)[span_11](start_span)[span_11](end_span)[span_12](start_span)[span_12](end_span).
+- **Backend:** FastAPI, Python, PyPDF
+- **Frontend:** Streamlit
+- **Architecture:** RAG (Retrieval-Augmented Generation)
 
 ## ⚙️ طريقة التشغيل محلياً
-1. تثبيت المتطلبات:
+1. تشغيل السيرفر الخلفي:
    ```bash
-   pip install -r requirements.txt
+   py -3.11 -m uvicorn backend:app --reload --port 8000
